@@ -13,9 +13,10 @@ function AccountOperations() {
   const {
     loan: currentLoan,
     loanPurpose: currentLoanPurpose,
-    balance,
+    
     isLoading,
   } = useSelector((store) => store.account);
+
 
   function handleDeposit() {
     if (!depositAmount) return;
